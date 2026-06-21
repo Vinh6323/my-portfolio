@@ -15,3 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+const btn = document.getElementById("darkModeBtn");
+
+if(btn){
+    btn.addEventListener("click",()=>{
+        document.body.classList.toggle("dark");
+    });
+}

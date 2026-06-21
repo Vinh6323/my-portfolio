@@ -143,3 +143,38 @@ footer{
     padding:20px;
     margin-top:50px;
 }
+.grid-projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark .project-card{
+    background:#1f1f1f;
+}
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.avatar{
+    width:120px;
+    height:120px;
+}
+
+}
